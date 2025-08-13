@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Día del Logro - Nivel Primaria</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/logo.png">
+
 <style>
     body {
         margin: 0;
@@ -15,8 +19,20 @@
     }
 
     header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px;
+        position: relative;
+    }
+
+    header img {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        height: 60px;
+        width: auto;
     }
 
     h1, h2 {
@@ -104,14 +120,18 @@
 <body>
 
 <header>
-    <h1>Institución Educativa Integrada José Gálvez</h1>
-    <h2>Nivel Primaria - Día del Logro</h2>
+    <img src="img/logo.png" alt="Logo José Gálvez">
+    <div>
+        <h1>Institución Educativa Integrada José Gálvez</h1>
+        <h2>Nivel Primaria - Día del Logro</h2>
+    </div>
 </header>
 
 <div class="carousel">
     <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
     
     <!-- Lista de imágenes -->
+
     <img src="fotos/foto (1).jpg" class="active">
     <img src="fotos/foto (2).jpg">
     <img src="fotos/foto (3).jpg">
@@ -183,6 +203,8 @@
     <img src="fotos/foto (69).jpg">
     <img src="fotos/foto (70).jpg">
 
+    <!-- ... resto de imágenes ... -->
+
     <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
 </div>
 
@@ -190,10 +212,9 @@
     <p>Dirección: Jr. Las Begonias (Secundaria) y Jr. Las Orquídeas (Primaria), Río Negro - Satipo</p>
     <p>Leonardo David Maytan Quispe - Ingeniero de Sistemas</p>
     <p>📞 <a href="https://wa.me/qr/A7IPPXNTP7RNE1" target="_blank">900690496</a></p>
-    <p> <a href="https://www.facebook.com/leodavid.maytan" target="_blank">Facebook</a></p>
-    <p> <a href="https://www.credly.com/users/leonardo-david-maytan-quispe/badges" target="_blank">Credly</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/leodavid.maytan" target="_blank">leodavid.maytan</a></p>
+    <p>Información: <a href="https://www.credly.com/users/leonardo-david-maytan-quispe/badges" target="_blank">Credly</a></p>
 </footer>
-
 
 <script>
     let index = 0;

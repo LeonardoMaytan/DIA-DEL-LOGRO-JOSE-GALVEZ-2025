@@ -18,22 +18,24 @@
         text-align: center;
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 20px;
-        position: relative;
-    }
+header img {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    height: 140px; /* Aumentado */
+    width: auto;   /* Mantener proporción */
+}
 
-    header img {
-        position: absolute;
-        left: 20px;
-        top: 10px;
-        height: 60px;
-        width: auto;
-    }
+header {
+    height: 160px; /* Más alto para que el logo quepa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    position: relative;
+}
+
 
     h1, h2 {
         margin: 5px 0;
@@ -241,3 +243,4 @@
 
 </body>
 </html>
+

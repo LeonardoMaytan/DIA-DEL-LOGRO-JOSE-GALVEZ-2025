@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Día del Logro - Nivel Primaria</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('fondo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+    }
+
+    h1, h2 {
+        margin: 5px 0;
+    }
+
+    /* Contenedor del carrusel */
+    .carousel {
+        position: relative;
+        max-width: 90%;
+        margin: 20px auto;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: black;
+        width: 800px;
+        height: 600px;
+    }
+
+    /* Imágenes del carrusel */
+    .carousel img {
+        width: 800px;
+        height: 600px;
+        object-fit: contain; /* Mantener proporción */
+        display: none;
+        background-color: black;
+    }
+
+    .carousel img.active {
+        display: block;
+    }
+
+    /* Botones */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        user-select: none;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #00aced;
+        text-decoration: none;
+    }
+
+    /* Adaptar a pantallas pequeñas */
+    @media (max-width: 850px) {
+        .carousel {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Institución Educativa Integrada José Gálvez</h1>
+    <h2>Nivel Primaria - Día del Logro</h2>
+</header>
+
+<div class="carousel">
+    <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+    
+    <!-- Lista de imágenes -->
+    <img src="fotos/foto (1).jpg" class="active">
+    <img src="fotos/foto (2).jpg">
+    <img src="fotos/foto (3).jpg">
+    <img src="fotos/foto (4).jpg">
+    <img src="fotos/foto (5).jpg">
+    <img src="fotos/foto (6).jpg">
+    <img src="fotos/foto (7).jpg">
+    <img src="fotos/foto (8).jpg">
+    <img src="fotos/foto (9).jpg">
+    <img src="fotos/foto (10).jpg">
+    <img src="fotos/foto (11).jpg">
+    <img src="fotos/foto (12).jpg">
+    <img src="fotos/foto (13).jpg">
+    <img src="fotos/foto (14).jpg">
+    <img src="fotos/foto (15).jpg">
+    <img src="fotos/foto (16).jpg">
+    <img src="fotos/foto (17).jpg">
+    <img src="fotos/foto (18).jpg">
+    <img src="fotos/foto (19).jpg">
+    <img src="fotos/foto (20).jpg">
+    <img src="fotos/foto (21).jpg">
+    <img src="fotos/foto (22).jpg">
+    <img src="fotos/foto (23).jpg">
+    <img src="fotos/foto (24).jpg">
+    <img src="fotos/foto (25).jpg">
+    <img src="fotos/foto (26).jpg">
+    <img src="fotos/foto (27).jpg">
+    <img src="fotos/foto (28).jpg">
+    <img src="fotos/foto (29).jpg">
+    <img src="fotos/foto (30).jpg">
+    <img src="fotos/foto (31).jpg">
+    <img src="fotos/foto (32).jpg">
+    <img src="fotos/foto (33).jpg">
+    <img src="fotos/foto (34).jpg">
+    <img src="fotos/foto (35).jpg">
+    <img src="fotos/foto (36).jpg">
+    <img src="fotos/foto (37).jpg">
+    <img src="fotos/foto (38).jpg">
+    <img src="fotos/foto (39).jpg">
+    <img src="fotos/foto (40).jpg">
+    <img src="fotos/foto (41).jpg">
+    <img src="fotos/foto (42).jpg">
+    <img src="fotos/foto (43).jpg">
+    <img src="fotos/foto (44).jpg">
+    <img src="fotos/foto (45).jpg">
+    <img src="fotos/foto (46).jpg">
+    <img src="fotos/foto (47).jpg">
+    <img src="fotos/foto (48).jpg">
+    <img src="fotos/foto (49).jpg">
+    <img src="fotos/foto (50).jpg">
+    <img src="fotos/foto (51).jpg">
+    <img src="fotos/foto (52).jpg">
+    <img src="fotos/foto (53).jpg">
+    <img src="fotos/foto (54).jpg">
+    <img src="fotos/foto (55).jpg">
+    <img src="fotos/foto (56).jpg">
+    <img src="fotos/foto (57).jpg">
+    <img src="fotos/foto (58).jpg">
+    <img src="fotos/foto (59).jpg">
+    <img src="fotos/foto (60).jpg">
+    <img src="fotos/foto (61).jpg">
+    <img src="fotos/foto (62).jpg">
+    <img src="fotos/foto (63).jpg">
+    <img src="fotos/foto (64).jpg">
+    <img src="fotos/foto (65).jpg">
+    <img src="fotos/foto (66).jpg">
+    <img src="fotos/foto (67).jpg">
+    <img src="fotos/foto (68).jpg">
+    <img src="fotos/foto (69).jpg">
+    <img src="fotos/foto (70).jpg">
+
+    <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+</div>
+
+<footer>
+    <p>Dirección: Jr. Las Begonias (Secundaria) y Jr. Las Orquídeas (Primaria), Río Negro - Satipo</p>
+    <p>Leonardo David Maytan Quispe - Ingeniero de Sistemas</p>
+    <p>📞 <a href="https://wa.me/qr/A7IPPXNTP7RNE1" target="_blank">900690496</a></p>
+    <p> <a href="https://www.facebook.com/leodavid.maytan" target="_blank">Facebook</a></p>
+    <p> <a href="https://www.credly.com/users/leonardo-david-maytan-quispe/badges" target="_blank">Credly</a></p>
+</footer>
+
+
+<script>
+    let index = 0;
+    const imagenes = document.querySelectorAll('.carousel img');
+    const total = imagenes.length;
+
+    function mostrarImagen(n) {
+        imagenes.forEach(img => img.classList.remove('active'));
+        imagenes[n].classList.add('active');
+    }
+
+    function cambiarImagen(n) {
+        index += n;
+        if (index < 0) index = total - 1;
+        if (index >= total) index = 0;
+        mostrarImagen(index);
+    }
+
+    // Cambio automático cada 10 segundos
+    setInterval(() => {
+        cambiarImagen(1);
+    }, 10000);
+</script>
+
+</body>
+</html>

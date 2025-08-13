@@ -8,116 +8,135 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="img/logo.png">
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: url('fondo.jpg') no-repeat center center fixed;
-        background-size: cover;
-        color: white;
-        text-align: center;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('img/fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
 
-header img {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    height: 140px; /* Aumentado */
-    width: auto;   /* Mantener proporción */
-}
+        header img {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            max-height: 140px;
+            height: auto;
+            width: auto;
+        }
 
-header {
-    height: 160px; /* Más alto para que el logo quepa */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    position: relative;
-}
+        header {
+            height: auto;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 10px 10px 160px; /* espacio a la izquierda para el logo */
+            position: relative;
+            flex-wrap: wrap;
+        }
 
+        @media (max-width: 768px) {
+            header img {
+                max-height: 80px;
+                left: 5px;
+                top: 5px;
+            }
 
-    h1, h2 {
-        margin: 5px 0;
-    }
+            header {
+                padding: 10px; /* menos espacio en móviles */
+            }
 
-    /* Contenedor del carrusel */
-    .carousel {
-        position: relative;
-        max-width: 90%;
-        margin: 20px auto;
-        overflow: hidden;
-        border-radius: 10px;
-        background-color: black;
-        width: 800px;
-        height: 600px;
-    }
+            header h1, header h2 {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
 
-    /* Imágenes del carrusel */
-    .carousel img {
-        width: 800px;
-        height: 600px;
-        object-fit: contain; /* Mantener proporción */
-        display: none;
-        background-color: black;
-    }
+        h1, h2 {
+            margin: 5px 0;
+        }
 
-    .carousel img.active {
-        display: block;
-    }
-
-    /* Botones */
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        border-radius: 5px;
-        user-select: none;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-    .prev {
-        left: 10px;
-    }
-
-    .next {
-        right: 10px;
-    }
-
-    footer {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 15px;
-        margin-top: 20px;
-        font-size: 14px;
-    }
-
-    footer a {
-        color: #00aced;
-        text-decoration: none;
-    }
-
-    /* Adaptar a pantallas pequeñas */
-    @media (max-width: 850px) {
+        /* Contenedor del carrusel */
         .carousel {
-            width: 100%;
-            height: auto;
+            position: relative;
+            max-width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: black;
+            width: 800px;
+            height: 600px;
         }
 
+        /* Imágenes del carrusel */
         .carousel img {
-            width: 100%;
-            height: auto;
+            width: 800px;
+            height: 600px;
+            object-fit: contain;
+            display: none;
+            background-color: black;
         }
-    }
-</style>
+
+        .carousel img.active {
+            display: block;
+        }
+
+        /* Botones */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            user-select: none;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00aced;
+            text-decoration: none;
+        }
+
+        /* Adaptar a pantallas pequeñas */
+        @media (max-width: 850px) {
+            .carousel {
+                width: 100%;
+                height: auto;
+            }
+
+            .carousel img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -243,4 +262,5 @@ header {
 
 </body>
 </html>
+
 

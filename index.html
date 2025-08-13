@@ -18,14 +18,15 @@
             text-align: center;
         }
 
-        header img {
-            position: absolute;
-            left: 10px;
-            top: 10px;
-            max-height: 140px;
-            height: auto;
-            width: auto;
-        }
+header img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    max-height: 200px; /* antes 140px */
+    height: auto;
+    width: auto;
+}
+
 
         header {
             height: auto;
@@ -39,22 +40,23 @@
             flex-wrap: wrap;
         }
 
-        @media (max-width: 768px) {
-            header img {
-                max-height: 80px;
-                left: 5px;
-                top: 5px;
-            }
+@media (max-width: 768px) {
+    header img {
+        max-height: 120px; /* antes 80px */
+        left: 5px;
+        top: 5px;
+    }
 
-            header {
-                padding: 10px; /* menos espacio en móviles */
-            }
+    header {
+        padding: 10px; /* menos espacio en móviles */
+    }
 
-            header h1, header h2 {
-                font-size: 16px;
-                text-align: center;
-            }
-        }
+    header h1, header h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
 
         h1, h2 {
             margin: 5px 0;
@@ -141,12 +143,15 @@
 <body>
 
 <header>
-    <img src="img/logo.png" alt="Logo José Gálvez">
-    <div>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo José Gálvez">
+    </div>
+    <div class="titulo">
         <h1>Institución Educativa Integrada José Gálvez</h1>
         <h2>Nivel Primaria - Día del Logro</h2>
     </div>
 </header>
+
 
 <div class="carousel">
     <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
@@ -262,5 +267,6 @@
 
 </body>
 </html>
+
 
 
